@@ -28,6 +28,8 @@ Publish config and migration by running:
 
 ``` bash
     php artisan vendor:publish --provider=asanzred/kount
+```
+``` bash
     php artisan migrate
 ```
 
