@@ -1,0 +1,67 @@
+<?php namespace Asanzred\Kount\Libraries\Kount\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class KountResponse extends Model
+{
+    public $table = 'kount';
+
+    public $timestamps = false;
+    protected $fillable = [ 'AUTO',
+                            'BROWSER',
+                            'BRND',
+                            'CARDS',
+                            'COOKIES',
+                            'COUNTERS_TRIGGERED',
+                            'COUNTER_NAME_X',
+                            'COUNTER_VALUE_X',
+                            'COUNTRY',
+                            'DDFS',
+                            'DEVICE_LAYERS',
+                            'DEVICES',
+                            'DSR',
+                            'EMAILS',
+                            'ERROR_COUNT',
+                            'ERROR_N',
+                            'FINGERPRINT',
+                            'FLASH',
+                            'GEOX',
+                            'HTTP_COUNTRY',
+                            'IP_IPAD',
+                            'JAVSCRIPT',
+                            'KAPT',
+                            'KYCF',
+                            'LANGUAGE',
+                            'LOCALTIME',
+                            'MERC',
+                            'MOBILE_DEVICE',
+                            'MOBILE_FORWARDER',
+                            'MOBILE_TYPE',
+                            'MODE',
+                            'NETW',
+                            'ORDR',
+                            'OS',
+                            'PC_REMOTE',
+                            'PIP_IPAD',
+                            'PROXY',
+                            'REASON_CODE',
+                            'REGN',
+                            'REGION',
+                            'RULES_TRIGGERED',
+                            'RULE_DESCRIPTION_X',
+                            'RULE_ID_X',
+                            'SCOR',
+                            'SESS',
+                            'SITE',
+                            'STAT',
+                            'TIMEZONE',
+                            'TRAN',
+                            'UAS',
+                            'VELO',
+                            'VERS',
+                            'VMAX',
+                            'VOICE_DEVICE',
+                            'WARNING_COUNT',
+                            'WARNING_N'
+    ];
+}
