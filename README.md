@@ -27,7 +27,8 @@ Add ServiceProvider in your `app.php` config file.
 Publish config and migration by running:
 
 ``` bash
-    php artisan vendor:publish
+    php artisan vendor:publish --provider=asanzred/kount
+    php artisan migrate
 ```
 
 
