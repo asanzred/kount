@@ -4,6 +4,8 @@
 [![Software License][ico-license]](LICENSE.md)
 [![Total Downloads][ico-downloads]][link-downloads]
 
+For Laravel 4 version look at [Laravelkount][link-laravel4]
+
 ## Install
 
 Via Composer
@@ -69,3 +71,4 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [link-downloads]: https://packagist.org/packages/asanzred/kount
 [link-author]: https://github.com/asanzred
 [link-contributors]: ../../contributors
+[link-laravel4]: https://github.com/asanzred/laravelkount
