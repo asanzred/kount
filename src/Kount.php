@@ -2,17 +2,21 @@
 
 namespace Asanzred\Kount;
 
-use Asanzred\Kount\Libraries\Kount\Log\Factory\LogFactory;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Http\Request;
+
+use Config;
+use Log;
+use Lang;
+use Session;
+use Exception;
+
 use Asanzred\Kount\Libraries\Kount\Ris\Request\Inquiry;
 use Asanzred\Kount\Libraries\Kount\Ris\Request\Update;
+use Asanzred\Kount\Libraries\Kount\Models\KountResponse;
 use Asanzred\Kount\Libraries\Kount\Ris\Data\CartItem;
+use Asanzred\Kount\Libraries\Kount\Log\Factory\LogFactory;
 use Asanzred\Kount\Libraries\Kount\Ris\IllegalArgumentException;
-
-use \User;
-use \Lang;
-use \CountryEquivalenceIso;
-use \Session;
-use \Config;
 
 class Kount
 {
@@ -52,6 +56,35 @@ class Kount
         $loggerFactory = LogFactory::getLoggerFactory();
         $logger = $loggerFactory->getLogger('KOUNT');
         $logger->error($msg);
+    }
+
+    public static function requestU($ktid,$transactionid,$user,$sessionid,$conn = null){
+            
+            $params = [];
+            $mode  = Update::MODE_U;
+            $kount = Kount::instance($mode);
+
+            $params['ORDR'] = $transactionid;
+            $params['TRAN'] = $ktid;
+            $params['SESS'] = $sessionid;
+            $params['MACK'] = 'N';
+
+            
+
+            foreach($params as $k => $v){
+                $kount->setParm($k,$v);    
+            }
+
+        
+            $response = $kount->getResponse();
+            $r = new KountResponse($response->getAll());
+            if(!is_null($conn)){
+                $r->setConnection($conn);
+            }
+
+            $r->save();
+
+            return $response->getAll();
     }
 
     public static function instance($mode)
