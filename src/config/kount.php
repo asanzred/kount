@@ -12,6 +12,9 @@ return array(
     'MERCHANTURL'        =>  '',
     'COMPANYSERVERURL'   =>  'https://tst.kaptcha.com',
 
+    //Add CA certificate path if you have problems with curl. If not leave blank
+    'CACERT'             =>  '',
+
     // RIS end-point
     //   production: https://risk.kount.net
     //   boarding & testing: https://risk.test.kount.net
