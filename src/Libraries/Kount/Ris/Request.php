@@ -5,6 +5,10 @@ namespace Asanzred\Kount\Libraries\Kount\Ris;
 use Asanzred\Kount\Libraries\Kount\Log\Factory\LogFactory;
 use Asanzred\Kount\Libraries\Kount\Util\ConfigFileReader;
 use Asanzred\Kount\Libraries\Kount\Util\Khash;
+
+use Config;
+
+
 /**
  * @package Kount
  * @subpackage Ris
@@ -225,6 +229,10 @@ abstract class Request {
     curl_setopt($ch, CURLOPT_VERBOSE, 0);
     curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
 
+    if(Config::get('kount.CACERT') != ''){
+      curl_setopt($ch, CURLOPT_CAINFO, Config::get('kount.CACERT'));
+    }
+
     // try API key authentication first, then fall back to certificates
     // which are deprecated.
     if ($this->apiKey != "") {
@@ -266,7 +274,7 @@ abstract class Request {
     if (curl_errno($ch)) {
       $result = curl_error($ch);
       $this->logger->error(__METHOD__ . " An error occurred posting to RIS. " .
-        "Curl error [$result]");
+        "Curl error (".curl_errno($ch).") [$result]");
       throw new Exception($result);
     }
     curl_close($ch);
