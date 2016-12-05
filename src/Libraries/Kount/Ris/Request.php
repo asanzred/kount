@@ -226,8 +226,14 @@ abstract class Request {
     curl_setopt($ch, CURLOPT_TIMEOUT, $this->connectionTimeout);
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 1);
-    curl_setopt($ch, CURLOPT_VERBOSE, 0);
     curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
+
+    curl_setopt($ch, CURLOPT_VERBOSE, 0);
+    # Only DEBUG Mode
+    //curl_setopt($ch, CURLOPT_VERBOSE, 1);
+    //$verbose = fopen('/path/to/project/logs/curl.log', 'w+');
+    //curl_setopt($ch, CURLOPT_STDERR, $verbose);
+    # ----------
 
     if(Config::get('kount.CACERT') != ''){
       curl_setopt($ch, CURLOPT_CAINFO, Config::get('kount.CACERT'));
