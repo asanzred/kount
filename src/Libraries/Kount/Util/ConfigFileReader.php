@@ -57,7 +57,7 @@ class ConfigFileReader {
 
 
     $this->settings = Config::get('kount');
-    Log::error(Config::get('kount.LOGGER'));
+    //Log::error(Config::get('kount.LOGGER'));
   }
 
   /**
