@@ -1,8 +1,8 @@
 <?php
 
-namespace Asanzred\Kount\Libraries\Kount\Log\Factory;
+namespace Smallworldfs\Kount\Libraries\Kount\Log\Factory;
 
-use Asanzred\Kount\Libraries\Kount\Log\Binding\NopLogger;
+use Smallworldfs\Kount\Libraries\Kount\Log\Binding\NopLogger;
 /**
  * @package Kount_Log
  * @subpackage Factory

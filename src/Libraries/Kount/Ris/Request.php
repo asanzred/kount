@@ -1,13 +1,12 @@
 <?php
 
-namespace Asanzred\Kount\Libraries\Kount\Ris;
+namespace Smallworldfs\Kount\Libraries\Kount\Ris;
 
-use Asanzred\Kount\Libraries\Kount\Log\Factory\LogFactory;
-use Asanzred\Kount\Libraries\Kount\Util\ConfigFileReader;
-use Asanzred\Kount\Libraries\Kount\Util\Khash;
+use Smallworldfs\Kount\Libraries\Kount\Log\Factory\LogFactory;
+use Smallworldfs\Kount\Libraries\Kount\Util\ConfigFileReader;
+use Smallworldfs\Kount\Libraries\Kount\Util\Khash;
 
 use Config;
-
 
 /**
  * @package Kount

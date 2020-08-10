@@ -1,9 +1,9 @@
 <?php
 
-namespace Asanzred\Kount\Libraries\Kount\Ris\Request;
+namespace Smallworldfs\Kount\Libraries\Kount\Ris\Request;
 
-use Asanzred\Kount\Libraries\Kount\Ris\IllegalArgumentException;
-use Asanzred\Kount\Libraries\Kount\Ris\Request;
+use Smallworldfs\Kount\Libraries\Kount\Ris\IllegalArgumentException;
+use Smallworldfs\Kount\Libraries\Kount\Ris\Request;
 
 
 /**

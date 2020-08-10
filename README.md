@@ -1,4 +1,4 @@
-# asanzred/kount
+# smallworldfs/kount
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -11,7 +11,7 @@ For Laravel 4 version look at [Laravelkount][link-laravel4]
 Via Composer
 
 ``` bash
-$ composer require asanzred/kount
+$ composer require smallworldfs/kount
 ```
 
 Add ServiceProvider in your `app.php` config file.
@@ -20,7 +20,7 @@ Add ServiceProvider in your `app.php` config file.
 // config/app.php
 'providers' => [
     ...
-    Asanzred\Kount\KountServiceProvider::class,
+    Smallworldfs\Kount\KountServiceProvider::class,
 ]
 ```
 
@@ -29,7 +29,7 @@ Add ServiceProvider in your `app.php` config file.
 Publish config and migration by running:
 
 ``` bash
-    php artisan vendor:publish --provider=asanzred/kount
+    php artisan vendor:publish --provider=smallworldfs/kount
 ```
 ``` bash
     php artisan migrate
@@ -52,7 +52,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) and [CONDUCT](CONDUCT.md) for details
 
 ## Security
 
-If you discover any security related issues, please email asanzred@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email smallworldfs@gmail.com instead of using the issue tracker.
 
 ## Credits
 
@@ -63,12 +63,12 @@ If you discover any security related issues, please email asanzred@gmail.com ins
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/asanzred/kount.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/smallworldfs/kount.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/asanzred/kount.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/smallworldfs/kount.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/asanzred/kount
-[link-downloads]: https://packagist.org/packages/asanzred/kount
-[link-author]: https://github.com/asanzred
+[link-packagist]: https://packagist.org/packages/smallworldfs/kount
+[link-downloads]: https://packagist.org/packages/smallworldfs/kount
+[link-author]: https://github.com/smallworldfs
 [link-contributors]: ../../contributors
-[link-laravel4]: https://github.com/asanzred/laravelkount
+[link-laravel4]: https://github.com/smallworldfs/laravelkount

@@ -1,6 +1,6 @@
 <?php
 
-namespace Asanzred\Kount\Http\Controllers;
+namespace Smallworldfs\Kount\Http\Controllers;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -14,11 +14,11 @@ use Session;
 use Exception;
 
 use \Kount;
-use Asanzred\Kount\Libraries\Kount\Ris\IllegalArgumentException;
-use Asanzred\Kount\Libraries\Kount\Ris\Request\Inquiry;
-use Asanzred\Kount\Libraries\Kount\Ris\Request\Update;
-use Asanzred\Kount\Libraries\Kount\Models\KountResponse;
-use Asanzred\Kount\Libraries\Kount\Ris\Data\CartItem;
+use Smallworldfs\Kount\Libraries\Kount\Ris\IllegalArgumentException;
+use Smallworldfs\Kount\Libraries\Kount\Ris\Request\Inquiry;
+use Smallworldfs\Kount\Libraries\Kount\Ris\Request\Update;
+use Smallworldfs\Kount\Libraries\Kount\Models\KountResponse;
+use Smallworldfs\Kount\Libraries\Kount\Ris\Data\CartItem;
 
 class KountController extends Controller
 {

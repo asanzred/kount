@@ -1,9 +1,10 @@
 <?php
 
-namespace Asanzred\Kount;
+namespace Smallworldfs\Kount;
 
 use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
+
 
 use Config;
 use Log;
@@ -11,12 +12,12 @@ use Lang;
 use Session;
 use Exception;
 
-use Asanzred\Kount\Libraries\Kount\Ris\Request\Inquiry;
-use Asanzred\Kount\Libraries\Kount\Ris\Request\Update;
-use Asanzred\Kount\Libraries\Kount\Models\KountResponse;
-use Asanzred\Kount\Libraries\Kount\Ris\Data\CartItem;
-use Asanzred\Kount\Libraries\Kount\Log\Factory\LogFactory;
-use Asanzred\Kount\Libraries\Kount\Ris\IllegalArgumentException;
+use Smallworldfs\Kount\Libraries\Kount\Ris\Request\Inquiry;
+use Smallworldfs\Kount\Libraries\Kount\Ris\Request\Update;
+use Smallworldfs\Kount\Libraries\Kount\Models\KountResponse;
+use Smallworldfs\Kount\Libraries\Kount\Ris\Data\CartItem;
+use Smallworldfs\Kount\Libraries\Kount\Log\Factory\LogFactory;
+use Smallworldfs\Kount\Libraries\Kount\Ris\IllegalArgumentException;
 
 class Kount
 {

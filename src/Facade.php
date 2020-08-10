@@ -1,5 +1,5 @@
 <?php
-namespace Asanzred\Kount;
+namespace Smallworldfs\Kount;
 
 use Illuminate\Support\Facades\Facade as IlluminateFacade;
 

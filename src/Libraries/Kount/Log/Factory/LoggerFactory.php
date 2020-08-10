@@ -1,6 +1,6 @@
 <?php
 
-namespace Asanzred\Kount\Libraries\Kount\Log\Factory;
+namespace Smallworldfs\Kount\Libraries\Kount\Log\Factory;
 /**
  * @package Kount_Log
  * @subpackage Factory

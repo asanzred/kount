@@ -1,6 +1,6 @@
 <?php 
 
-namespace Asanzred\Kount\Libraries\Kount\Log\Binding;
+namespace Smallworldfs\Kount\Libraries\Kount\Log\Binding;
 /**
  * @package Kount_Log
  * @subpackage Binding
