@@ -1,6 +1,6 @@
 <?php
 
-namespace Asanzred\Kount\Libraries\Kount\Ris;
+namespace Smallworldfs\Kount\Libraries\Kount\Ris;
 
 
 /**

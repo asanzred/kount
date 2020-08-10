@@ -1,4 +1,4 @@
-<?php namespace Asanzred\Kount\Libraries\Kount\Models;
+<?php namespace Smallworldfs\Kount\Libraries\Kount\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Asanzred\Kount\Libraries\Kount\SimpleLogger;
+namespace Smallworldfs\Kount\Libraries\Kount\SimpleLogger;
 
-use Asanzred\Kount\Libraries\Kount\Util\ConfigFileReader;
+use Smallworldfs\Kount\Libraries\Kount\Util\ConfigFileReader;
 
 /**
  * @package Kount_SimpleLogger

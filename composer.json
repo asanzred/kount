@@ -1,18 +1,18 @@
 {
-    "name": "asanzred/kount",
+    "name": "smallworldfs/kount",
     "type": "library",
     "description": "Kount wrapper for Laravel 5",
     "keywords": [
-        "Asanzred",
+        "Smallworldfs",
         "Kount"
     ],
-    "homepage": "https://github.com/asanzred/kount",
+    "homepage": "https://github.com/smallworldfs/kount",
     "license": "MIT",
     "authors": [
         {
             "name": "Alberto Sanz Redondo",
-            "email": "asanzred@gmail.com",
-            "homepage": "https://github.com/asanzred",
+            "email": "smallworldfs@gmail.com",
+            "homepage": "https://github.com/smallworldfs",
             "role": "Developer"
         }
     ],
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Asanzred\\Kount\\": "src"
+            "Smallworldfs\\Kount\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Asanzred\\Kount\\": "tests"
+            "Smallworldfs\\Kount\\": "tests"
         }
     },
     "scripts": {

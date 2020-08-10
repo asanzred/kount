@@ -1,8 +1,8 @@
 <?php
 
-namespace Asanzred\Kount\Libraries\Kount\Ris\Data;
+namespace Smallworldfs\Kount\Libraries\Kount\Ris\Data;
 
-use Asanzred\Kount\Libraries\Kount\Ris\IllegalArgumentException;
+use Smallworldfs\Kount\Libraries\Kount\Ris\IllegalArgumentException;
 
 
 /**

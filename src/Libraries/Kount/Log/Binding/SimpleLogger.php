@@ -1,8 +1,8 @@
 <?php
 
-namespace Asanzred\Kount\Libraries\Kount\Log\Binding;
+namespace Smallworldfs\Kount\Libraries\Kount\Log\Binding;
 
-use Asanzred\Kount\Libraries\Kount\SimpleLogger\File;
+use Smallworldfs\Kount\Libraries\Kount\SimpleLogger\File;
 
 /**
  * @package Kount_Log

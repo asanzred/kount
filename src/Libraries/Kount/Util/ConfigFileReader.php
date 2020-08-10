@@ -1,6 +1,6 @@
 <?php
 
-namespace Asanzred\Kount\Libraries\Kount\Util;
+namespace Smallworldfs\Kount\Libraries\Kount\Util;
 
 use \Config;
 use \Log;

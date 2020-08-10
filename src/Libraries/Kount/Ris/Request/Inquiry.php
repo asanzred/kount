@@ -1,9 +1,9 @@
 <?php
 
-namespace Asanzred\Kount\Libraries\Kount\Ris\Request;
+namespace Smallworldfs\Kount\Libraries\Kount\Ris\Request;
 
-use Asanzred\Kount\Libraries\Kount\Ris\IllegalArgumentException;
-use Asanzred\Kount\Libraries\Kount\Ris\Request;
+use Smallworldfs\Kount\Libraries\Kount\Ris\IllegalArgumentException;
+use Smallworldfs\Kount\Libraries\Kount\Ris\Request;
 
 /**
  * @package Kount_Ris
@@ -442,10 +442,10 @@ class Inquiry extends Request {
       throw new IllegalArgumentException("Cart must be an array");
     }
     for ($i = 0; $i < count($cart); $i++) {
-      if ('Asanzred\Kount\Libraries\Kount\Ris\Data\CartItem' != get_class($cart[$i])) {
+      if ('Smallworldfs\Kount\Libraries\Kount\Ris\Data\CartItem' != get_class($cart[$i])) {
         throw new IllegalArgumentException("Cart item #{$i} " .
             print_r($cart[$i], true) . " must be of type " .
-            "Asanzred\Kount\Libraries\Kount\Ris\Data\CartItem");
+            "Smallworldfs\Kount\Libraries\Kount\Ris\Data\CartItem");
       }
       $this->data["PROD_TYPE[{$i}]"] = $cart[$i]->getProductType();
       $this->data["PROD_ITEM[{$i}]"] = $cart[$i]->getItemName();

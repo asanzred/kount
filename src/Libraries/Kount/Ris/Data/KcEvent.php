@@ -1,6 +1,6 @@
 <?php
 
-namespace Asanzred\Kount\Libraries\Kount\Ris\Data;
+namespace Smallworldfs\Kount\Libraries\Kount\Ris\Data;
 
 /**
  * @package Kount_Ris

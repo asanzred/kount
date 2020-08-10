@@ -1,6 +1,6 @@
 <?php
 
-namespace Asanzred\Kount;
+namespace Smallworldfs\Kount;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\Router;
@@ -25,7 +25,7 @@ class KountServiceProvider extends ServiceProvider
         //$this->setupRoutes($this->app->router);
         
         
-        //php artisan vendor:publish --provider="Asanzred\Kount\KountServiceProvider"
+        //php artisan vendor:publish --provider="Smallworldfs\Kount\KountServiceProvider"
         $this->publishes([
                 __DIR__.'/config/kount.php' => config_path('kount.php'),
         ]);
@@ -48,7 +48,7 @@ class KountServiceProvider extends ServiceProvider
      */
     public function setupRoutes(Router $router)
     {
-        $router->group(['namespace' => 'Asanzred\Kount\Http\Controllers'], function($router)
+        $router->group(['namespace' => 'Smallworldfs\Kount\Http\Controllers'], function($router)
         {
             require __DIR__.'/Http/routes.php';
         });
